@@ -1,0 +1,195 @@
+<html>
+    <head>
+        <title>Web Design</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+        <style>
+            .red{
+                background-color: red;
+                width: 200px;
+                height: 750px;
+                position: fixed;
+                left: 0;
+                top: 0;
+                
+            }
+            .main{
+                position: relative;
+                margin-left: 250px;
+                
+                padding: 20px; /* Add some space inside the main content */
+                overflow-x: hidden;
+            }
+            .com{
+                text-align: center;
+                margin-top: 50px;
+                color: white;
+            }
+            .hom{
+                margin-top: 40px;
+                margin-left: 30px;
+                color: white;
+            }
+            .hom:hover{
+                background-color: gainsboro;
+                color: black;
+            }
+            .interior{
+                display: grid;
+                grid-template-columns: auto auto;
+                display: inline;
+                margin: 10px;
+                
+            }
+            .inter{
+                display: inline;
+            }
+            .images {
+                text-align: center; /* Center-align the text under the images */
+                max-width: 350px; /* Restrict the image container's width */
+            }
+
+            .images img {
+                width: 100%; /* Make images responsive within the container */
+                height: auto; /* Maintain the aspect ratio */
+                border-radius: 10px; /* Optional: Add rounded corners */
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow */
+            }
+            .dot{
+                border: 5px solid red;
+                width: 100px;
+               
+                background-color: red;
+                border-radius: 20px;
+            }
+            
+            
+            .designers{
+                display: flex;
+                flex-wrap: wrap; /* Allow wrapping to prevent overflow */
+                justify-content: center; /* Center the images */
+                gap: 20px; /* Add space between the items */
+                width: 100%; /* Ensure the container takes full width */
+                background-color: aliceblue; /* Keep existing background */
+                padding: 20px;
+                
+
+                
+            }
+            .table{
+                border: 1px solid grey;
+                text-align: center;
+                justify-content: center;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class="red">
+            <h1 class="com">Company name</h1>
+            <div >
+            <div class="hom">Home</div>
+            <div class="hom">Showcase</div>
+            <div class="hom">Services</div>
+            <div class="hom">Designers</div>
+            <div class="hom">Packages</div>
+            <div class="hom">Contach</div>
+            </div>
+        </div>
+        <div class="main">
+        <h1>Interior Design</h1>
+        <h1 style="color: red;">Showcase.</h1>
+        <div class="dot"></div><br>
+        <div class="interior">
+            <div class="inter"><img src="./atrium.jpg"></div>
+            <div class="inter"><img src="./kitchenconcrete.jpg"></div>
+            <div class="inter"><img src="./diningroom.jpg"></div>
+            <div class="inter"><img src="./bedroom.jpg"></div>
+            <div class="inter"><img src="./livingroom.jpg"></div>
+            <div class="inter"><img src="./livingroom2.jpg"></div>
+        </div>
+        <h1>Services.</h1>
+        <div class="dot"></div><br><br>
+        <p>We are a interior design service that focus on what's best for your home and what's best for you!</p>
+        <p>Some text about our services - what we do and what we offer. We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <h1>Designers.</h1>
+        <div class="dot"></div><br><br>
+        <p>The best team in the world.</p>
+        <p>We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <p><b>Our designers are thoughtfully chosen:</b></p>
+        <div class="designers">
+        <div class="images">
+            <img src="./team2.jpg" width="300px">
+            <h3>Jane Doe</h3>
+            <p class="text-secondary">Desginer</p>
+            <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+        </div>
+        <div class="images">
+            <img src="./team1.jpg" width="300px">
+            <h3>John Doe</h3>
+           
+            <p class="text-secondary">CEO & Founder</p>
+            <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+        </div>
+        <div class="images">
+            <img src="./team3.jpg" width="300px">
+            <h3>Mike Ross</h3>
+            <p class="text-secondary">CEO & Founder</p>
+            <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+        </div>
+        </div>
+        <h1 style="color: red;">Packages.</h1>
+        <div class="dot"></div>
+        <p>Some text our prices. Lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure</p>
+        <div class="table">
+        <table class="table">
+            <tr>
+                <th style="height: 70px; background-color: lightslategray;">Basic</th>
+                <th style="background-color: red;">Pro</th>
+            </tr>
+            <tr>
+                <td class="table-active">Floorplanning</td>
+                <td class="table-active">Floorplanning</td>
+            </tr>
+            <tr>
+                <td class="table-active">10 hours support</td>
+                <td class="table-active">50 hours support</td>
+            </tr>
+            <tr>
+                <td class="table-active">Photgraphy</td>
+                <td class="table-active">Photgraphy</td>
+            </tr>
+            <tr>
+                <td class="table-active">20% furniture discount</td>
+                <td class="table-active">50% furniture discount</td>
+            </tr>
+            <tr>
+                <td class="table-active">Good deals</td>
+                <td class="table-active">Great deals</td>
+            </tr>
+            <tr>
+                <td class="table-active">$199</td>
+                <td class="table-active">$249</td>
+            </tr>
+            <tr>
+                <td class="table-active">sign up</td>
+                <td class="table-active">Sign up</td>
+            </tr>
+        </table>
+        </div>
+        <h1 style="color: red;">Contant</h1><br>
+        <div class="dot"></div><br>
+        <p>Do you want us to style your home? Fill out the form and fill me in with the details :) We love meeting new people!</p><br>
+        
+        <label for="name">Name</label><br>
+        <input type="text" id="name" name="name" size="100px"><br>
+        <label for="email">Email</label><br>
+        <input type="email" id="email" name="email" size="100px"><br>
+        <label for="Message">Meassage</label><br>
+        <input type="text" id="Message" name="Message" size="100px"><br><br>
+        <button style="background-color: red; border: 2px solid red; width: 775px; color: white;">SendMessages</button><br><br><br>
+    </div>
+    </body>
+</html>
